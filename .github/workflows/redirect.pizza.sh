@@ -1,6 +1,6 @@
 PATTERN="Location: https://raw.githubusercontent.com/tomashubelbauer/3mf-zip-dir/main/3mf-zip-dir.sh"
 
-OUTPUT=`curl -I --no-progress-meter http://hubelbauer.art | grep "^Location"`;
+OUTPUT=`curl -I --no-progress-meter hubelbauer.art/3mf | grep "^Location"`;
 
 echo "Output:"
 echo "$OUTPUT" | tee output
