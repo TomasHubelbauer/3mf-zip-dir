@@ -1,0 +1,20 @@
+name: redirect.pizza
+on:
+  push:
+  schedule:
+    - cron: '0 * * * *'
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the source code to get the shell scripts
+        uses: actions/checkout@v3
+      - name: Check the hubelbauer.art/3mf redirect through redirect.pizza
+        run: .github/workflows/redirect.pizza.sh
+      - name: Upload output and pattern artifacts for debugging in case of an error
+        uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          path: |
+            output
+            pattern

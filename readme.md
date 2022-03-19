@@ -1,5 +1,7 @@
 # 3MF OPC ZIP file to a directory
 
+![](https://github.com/tomashubelbauer/3mf-zip-dir/workflows/redirect.pizza/badge.svg)
+
 This shell script scans the current directory for a 3MF file (an OPC ZIP format
 used in the CAD industry, for example by PrusaSlicer) and extracts the file to
 a directory by the same name, then deletes the file.

@@ -1,0 +1,3 @@
+# Ignore tee'd files used for debugging the shell scrips
+output
+pattern
