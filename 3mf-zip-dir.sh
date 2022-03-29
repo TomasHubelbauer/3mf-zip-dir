@@ -1,3 +1,5 @@
+# Run using `curl hubelbauer.art/3mf | sh`
+
 # Find the 3MF file in the working directory
 NAME_3MF=(*.3mf)
 
