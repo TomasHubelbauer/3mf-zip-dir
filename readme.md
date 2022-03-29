@@ -18,5 +18,5 @@ script to remove the `rm` statement.
 To run the script, use this command line:
 
 ```sh
-curl hubelbauer.art/3mf | sh
+curl -L hubelbauer.art/3mf | sh
 ```
